@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn11.xsd" id="definitions" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="dish" name="Dish">
+    <decisionTable id="decisionTable">
+      <input id="input1" label="Season">
+        <inputExpression id="inputExpression1" typeRef="string">        <text>season</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="Dish" name="desiredDish" typeRef="string" />
+      <rule id="row-964705835-1">
+        <inputEntry id="UnaryTests_12llyrl">        <text><![CDATA["Fall"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0qpoo2w">        <text><![CDATA["Chicken"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-964705835-2">
+        <inputEntry id="UnaryTests_16gtf54">        <text><![CDATA["Winter"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0o4q5jf">        <text><![CDATA["Some Spicy"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-964705835-3">
+        <inputEntry id="UnaryTests_05tpesb">        <text><![CDATA["Summer"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1105jay">        <text><![CDATA["Light Vegetables"]]></text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
