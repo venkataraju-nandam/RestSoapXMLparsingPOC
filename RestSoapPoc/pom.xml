@@ -1,0 +1,282 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.camunda.bpm.poc</groupId>
+  <artifactId>RestSoapPoc</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>RestSoap-Poc</name>
+  
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.camunda.bpm</groupId>
+        <artifactId>camunda-bom</artifactId>
+        <version>7.3.0</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.camunda.bpm</groupId>
+      <artifactId>camunda-engine</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+		<groupId>com.sun.net.httpserver</groupId>
+		<artifactId>http</artifactId>
+		<version>20070405</version>
+	</dependency>
+	
+		<dependency>
+			<groupId>org.camunda.template-engines</groupId>
+			<artifactId>camunda-template-engines-xquery-saxon</artifactId>
+			<version>1.1.0-SNAPSHOT</version>
+		</dependency>
+    
+    	<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>Saxon-HE</artifactId>
+			<version>9.7.0-1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>saxon-jdom</artifactId>
+			<version>8.7</version>
+		</dependency>
+    	<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+		
+    <dependency>
+	    <groupId>javax.inject</groupId>
+	    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.camunda.connect</groupId>
+	  <artifactId>camunda-connect-core</artifactId>
+	</dependency>
+	<dependency>
+	  <groupId>org.camunda.connect</groupId>
+	  <artifactId>camunda-connect-http-client</artifactId>
+	</dependency>
+	<dependency>
+	  <groupId>org.camunda.connect</groupId>
+	  <artifactId>camunda-connect-soap-http-client</artifactId>
+	</dependency>
+	<dependency>
+	  <groupId>org.camunda.bpm</groupId>
+	  <artifactId>camunda-engine-plugin-connect</artifactId>
+	</dependency>
+	<dependency>
+	  <groupId>org.camunda.connect</groupId>
+	  <artifactId>camunda-connect-connectors-all</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.camunda.connect</groupId>
+		<artifactId>camunda-connect-rest-httpclient</artifactId>
+		<version>1.0.0-alpha3</version>
+	</dependency>
+	
+		<dependency>
+			<groupId>org.camunda.spin</groupId>
+			<artifactId>camunda-spin-core</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.camunda.spin</groupId>
+			<artifactId>camunda-spin-dataformat-all</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.camunda.bpm</groupId>
+			<artifactId>camunda-engine-plugin-spin</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.camunda.spin</groupId>
+			<artifactId>camunda-spin-dataformat-json-jackson</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml</groupId>
+			<artifactId>jaxp-api</artifactId>
+			<version>1.4.2</version>
+		</dependency>
+		
+		
+		
+		
+
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-all</artifactId>
+			<version>5.13.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		
+
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-bundle</artifactId>
+			<version>1.19</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-core</artifactId>
+			<version>1.19</version>
+		</dependency>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.soap</groupId>
+			<artifactId>saaj-api</artifactId>
+			<version>1.3.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.basex</groupId>
+			<artifactId>basex</artifactId>
+			<version>7.3.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.basex</groupId>
+		  <artifactId>basex</artifactId>
+		  <version>7.6</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.basex</groupId>
+		  <artifactId>basex-api</artifactId>
+		  <version>7.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.basex</groupId>
+			<artifactId>basex</artifactId>
+			<version>8.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.3.168</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			 <groupId>org.mybatis</groupId>
+			 <artifactId>mybatis</artifactId>
+			 <version>3.2.2</version>
+ 		</dependency>
+		
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>saxon-dom</artifactId>
+			<version>8.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.camunda.template-engines</groupId>
+			<artifactId>camunda-template-engines-freemarker</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.camunda.commons</groupId>
+			<artifactId>camunda-commons-utils</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>net.xqj</groupId>
+		  <artifactId>basex-xqj</artifactId>
+		  <version>1.2.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.xqj2</groupId>
+		  <artifactId>xqj2</artifactId>
+		  <version>0.1.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>javax.xml.xquery</groupId>
+		  <artifactId>xqj-api</artifactId>
+		  <version>1.0</version>
+		</dependency>
+		<dependency> 
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-jdk14</artifactId>
+		  <version>1.7.13</version>
+		</dependency>
+		<dependency>
+		  <groupId>ch.qos.logback</groupId>
+		  <artifactId>logback-classic</artifactId>
+		  <version>1.1.2</version>
+		</dependency>
+		
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+          <archive>
+             <manifestEntries>
+                <Dependencies>org.slf4j</Dependencies>
+             </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <repositories>
+		<repository>
+			<id>camunda-bpm-nexus</id>
+			<name>camunda-bpm-nexus</name>
+			<url>https://app.camunda.com/nexus/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>basex</id>
+			<name>BaseX Maven Repository</name>
+			<url>http://files.basex.org/maven</url>
+		</repository>
+		<repository>
+		  <id>xqj</id>
+		  <name>XQJ Maven Repository</name>
+		  <url>http://xqj.net/maven</url>
+		</repository>
+	</repositories>
+  
+</project>

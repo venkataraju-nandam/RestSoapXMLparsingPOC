@@ -1,0 +1,17 @@
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\InvokeServicesAtg.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\SoapMessageFactory.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\ProcessOrderDelegate.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\OceConsumer.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\ExternalServicesDelegate.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\ExternalServiceInvoker.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\ValidateAddressService.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\Utility.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\ProcessOrderDelegateException.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\XmlParserFactory.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\OrderProcessingApp.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\ValidateOrderDelegate.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\UpdateAccountProfileService.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\UpdateAccountProfileDelegate.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\CreateOrderDelegate.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\ValidateAddressDelegate.java
+D:\marsWS1\RestSoapPoc\src\main\java\org\camunda\poc\restsoap\CreateOrderService.java
